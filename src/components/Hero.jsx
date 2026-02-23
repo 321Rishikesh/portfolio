@@ -73,6 +73,16 @@ export default function Hero() {
             View My Work
           </motion.a>
           <motion.a
+            href="/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-secondary"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Resume
+          </motion.a>
+          <motion.a
             href="#contact"
             className="btn btn-secondary"
             whileHover={{ scale: 1.05 }}
