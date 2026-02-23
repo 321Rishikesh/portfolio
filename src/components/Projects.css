@@ -85,7 +85,8 @@
 
 .project-description {
   font-size: 0.95rem;
-  color: rgba(226, 232, 240, 0.8);
+  color: var(--dark-text);
+  opacity: 0.9;
   margin-bottom: 15px;
   line-height: 1.6;
 }

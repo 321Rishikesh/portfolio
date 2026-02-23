@@ -25,6 +25,45 @@ body.light-mode {
   color: var(--light-text);
 }
 
+/* Light mode: use dark text/borders so content is visible on light background */
+body.light-mode {
+  --dark-text: #1e293b;
+  --dark-border: #cbd5e1;
+  --dark-bg: #f1f5f9;
+}
+
+body.light-mode input,
+body.light-mode textarea {
+  background: rgba(255, 255, 255, 0.9) !important;
+  color: #1e293b !important;
+  border-color: #cbd5e1;
+}
+
+body.light-mode input::placeholder,
+body.light-mode textarea::placeholder {
+  color: #64748b;
+}
+
+body.light-mode .about {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+body.light-mode .contact {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+body.light-mode .info-item {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+body.light-mode .navbar {
+  background: rgba(248, 250, 252, 0.9);
+}
+
+body.light-mode .project-card {
+  background: rgba(255, 255, 255, 0.8);
+}
+
 html {
   scroll-behavior: smooth;
 }
