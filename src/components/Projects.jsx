@@ -9,7 +9,7 @@ export default function Projects() {
       description: 'A fully functional YouTube clone application featuring video browsing, search functionality, and video playback capabilities. Built with modern web technologies for seamless user experience.',
       technologies: ['React', 'Node.js', 'API Integration', 'Video Streaming'],
       image: '/image/youtube.png',
-      link: 'https://youtubeclone-3-s63m.onrender.com'
+      link: 'https://youtube-c-three.vercel.app/'
     },
     {
       id: 2,
