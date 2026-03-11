@@ -71,6 +71,9 @@ export default function Navigation({ isDarkMode, setIsDarkMode }) {
             <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
           </motion.li>
           <motion.li variants={itemVars}>
+            <a href="#certificates" onClick={() => setIsOpen(false)}>Certificates</a>
+          </motion.li>
+          <motion.li variants={itemVars}>
             <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
           </motion.li>
         </motion.ul>

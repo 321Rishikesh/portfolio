@@ -121,8 +121,18 @@ body.light-mode .project-card {
 
 body.light-mode .about,
 body.light-mode .skills,
+body.light-mode .certificates,
 body.light-mode .contact {
   border-color: rgba(99, 102, 241, 0.12);
+}
+
+body.light-mode .certificates {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+body.light-mode .certificate-card {
+  background: rgba(255, 255, 255, 0.85);
+  border-color: rgba(99, 102, 241, 0.2);
 }
 
 html {
