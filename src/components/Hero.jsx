@@ -33,111 +33,123 @@ export default function Hero() {
         initial="hidden"
         animate="visible"
       >
-        <motion.div className="profile-image-container" variants={itemVariants}>
-          <motion.img
-            src="/profile.jpg"
-            alt="Kumar Rishikesh"
-            className="profile-image"
-            initial={{ scale: 0, rotate: -180 }}
-            animate={{ scale: 1, rotate: 0 }}
-            transition={{ type: 'spring', stiffness: 100, damping: 15 }}
-            whileHover={{ scale: 1.05 }}
-          />
-          <motion.div
-            className="image-border"
-            animate={{ rotate: 360 }}
-            transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
-          />
-        </motion.div>
+        <div className="hero-grid">
+          <motion.div className="profile-image-container" variants={itemVariants}>
+            <motion.img
+              src="/profile.jpg"
+              alt="Kumar Rishikesh"
+              className="profile-image"
+              initial={{ scale: 0, rotate: -180 }}
+              animate={{ scale: 1, rotate: 0 }}
+              transition={{ type: 'spring', stiffness: 100, damping: 15 }}
+              whileHover={{ scale: 1.05 }}
+            />
+            <motion.div
+              className="image-border"
+              animate={{ rotate: 360 }}
+              transition={{ duration: 20, repeat: Infinity, ease: 'linear' }}
+            />
+            <div className="image-glow" aria-hidden="true" />
+          </motion.div>
 
-        <motion.h1 variants={itemVariants}>
-          Hi, I'm <span className="highlight">Kumar Rishikesh</span>
-        </motion.h1>
+          <motion.div className="hero-text" variants={itemVariants}>
+            <p className="hero-kicker">Hello, I'm</p>
+            <h1>
+              Kumar <span className="highlight">Rishikesh</span>
+            </h1>
 
-        <motion.p variants={itemVariants} className="hero-subtitle">
-          Full Stack Web Developer
-        </motion.p>
+            <p className="hero-subtitle">Full Stack Web Developer</p>
 
-        <motion.p variants={itemVariants} className="hero-description">
-          I build beautiful, responsive web applications with modern technologies
-          and clean code. Passionate about creating amazing user experiences.
-        </motion.p>
+            <p className="hero-description">
+              I build beautiful, responsive web applications with modern technologies
+              and clean code. Passionate about creating amazing user experiences.
+            </p>
 
-        <motion.div className="hero-buttons" variants={itemVariants}>
-          <motion.a
-            href="#projects"
-            className="btn btn-primary"
-            whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(99, 102, 241, 0.4)' }}
-            whileTap={{ scale: 0.95 }}
-          >
-            View My Work
-          </motion.a>
-          <motion.a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-secondary"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Resume
-          </motion.a>
-          <motion.a
-            href="#contact"
-            className="btn btn-secondary"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            Get In Touch
-          </motion.a>
-        </motion.div>
+            <motion.div className="hero-buttons" variants={itemVariants}>
+              <motion.a
+                href="#projects"
+                className="btn btn-primary"
+                whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(63, 181, 255, 0.45)' }}
+                whileTap={{ scale: 0.95 }}
+              >
+                View My Work
+              </motion.a>
+              <motion.a
+                href="#contact"
+                className="btn btn-primary"
+                whileHover={{ scale: 1.05, boxShadow: '0 10px 30px rgba(63, 181, 255, 0.45)' }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Hire Me
+              </motion.a>
+              <motion.a
+                href="/resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-secondary"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Resume
+              </motion.a>
+              <motion.a
+                href="#contact"
+                className="btn btn-secondary"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Get In Touch
+              </motion.a>
+            </motion.div>
 
-        <motion.div className="social-links" variants={itemVariants}>
-          <motion.a
-            href="https://github.com/321Rishikesh"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-link"
-            whileHover={{ y: -5, scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="GitHub"
-          >
-            <span>GitHub</span>
-          </motion.a>
-          <motion.a
-            href="https://www.linkedin.com/in/kumar-rishikesh62/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-link"
-            whileHover={{ y: -5, scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="LinkedIn"
-          >
-            <span>LinkedIn</span>
-          </motion.a>
-          <motion.a
-            href="https://x.com/RishikeshK5164"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-link"
-            whileHover={{ y: -5, scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="Twitter"
-          >
-            <span>Twitter</span>
-          </motion.a>
-          <motion.a
-            href="https://www.instagram.com/rishikesh__ydv__?igsh=MTc2enN6cHoyeWQ2eA%3D%3D&utm_source=qr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-link"
-            whileHover={{ y: -5, scale: 1.2 }}
-            whileTap={{ scale: 0.9 }}
-            aria-label="Instagram"
-          >
-            <span>Instagram</span>
-          </motion.a>
-        </motion.div>
+            <motion.div className="social-links" variants={itemVariants}>
+              <motion.a
+                href="https://github.com/321Rishikesh"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                whileHover={{ y: -5, scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label="GitHub"
+              >
+                <span>GitHub</span>
+              </motion.a>
+              <motion.a
+                href="https://www.linkedin.com/in/kumar-rishikesh62/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                whileHover={{ y: -5, scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label="LinkedIn"
+              >
+                <span>LinkedIn</span>
+              </motion.a>
+              <motion.a
+                href="https://x.com/RishikeshK5164"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                whileHover={{ y: -5, scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label="Twitter"
+              >
+                <span>Twitter</span>
+              </motion.a>
+              <motion.a
+                href="https://www.instagram.com/rishikesh__ydv__?igsh=MTc2enN6cHoyeWQ2eA%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                whileHover={{ y: -5, scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                aria-label="Instagram"
+              >
+                <span>Instagram</span>
+              </motion.a>
+            </motion.div>
+          </motion.div>
+        </div>
       </motion.div>
 
       <motion.div

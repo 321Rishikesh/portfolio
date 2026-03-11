@@ -39,7 +39,7 @@ export default function Navigation({ isDarkMode, setIsDarkMode }) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <h2>KR</h2>
+          <h2>Portfolio</h2>
         </motion.div>
 
         <button
@@ -78,16 +78,23 @@ export default function Navigation({ isDarkMode, setIsDarkMode }) {
           </motion.li>
         </motion.ul>
 
+        <a className="nav-cta" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+          Download CV
+        </a>
+
         <motion.button
-          className="theme-toggle"
+          className={`theme-toggle ${isDarkMode ? 'is-dark' : 'is-light'}`}
           onClick={() => setIsDarkMode(!isDarkMode)}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
           aria-label="Toggle theme"
         >
-          {isDarkMode ? '☀️' : '🌙'}
+          <span className="toggle-thumb" aria-hidden="true">
+            <span className="moon" />
+          </span>
         </motion.button>
       </div>
     </motion.nav>
   );
 }
+
