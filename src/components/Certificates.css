@@ -15,7 +15,73 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 22px;
-  margin-top: 60px;
+  margin-top: 32px;
+}
+
+.training-section {
+  margin-top: 30px;
+  margin-bottom: 22px;
+}
+
+.subsection-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  color: var(--dark-text);
+}
+
+.subsection-heading h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+}
+
+.subsection-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(99, 102, 241, 0.18);
+  color: var(--primary-color);
+}
+
+.subsection-icon svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.training-grid {
+  display: grid;
+  gap: 18px;
+}
+
+.training-card {
+  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: 18px;
+  padding: 20px 22px;
+  box-shadow: 0 12px 35px -20px rgba(0, 0, 0, 0.5);
+}
+
+.training-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark-text);
+  margin-bottom: 8px;
+}
+
+.training-provider {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.training-duration {
+  color: rgba(231, 237, 246, 0.75);
+  font-size: 0.95rem;
 }
 
 .certificate-card {
@@ -23,8 +89,11 @@
   backdrop-filter: blur(12px);
   border: 1px solid rgba(99, 102, 241, 0.2);
   border-radius: 18px;
-  padding: 22px;
+  padding: 18px;
   box-shadow: 0 10px 40px -18px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
 }
 
 .certificate-card:hover {
@@ -37,6 +106,12 @@
   gap: 16px;
   align-items: flex-start;
   margin-bottom: 18px;
+}
+
+.certificate-body {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .certificate-mark {
@@ -127,5 +202,5 @@
     grid-template-columns: 1fr;
     margin-top: 50px;
   }
-}
 
+}

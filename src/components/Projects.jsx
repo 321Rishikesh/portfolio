@@ -9,7 +9,8 @@ export default function Projects() {
       description: 'A fully functional YouTube clone application featuring video browsing, search functionality, and video playback capabilities. Built with modern web technologies for seamless user experience.',
       technologies: ['React', 'Node.js', 'API Integration', 'Video Streaming'],
       image: '/image/youtube.png',
-      link: 'https://youtube-c-three.vercel.app/'
+      link: 'https://youtube-c-three.vercel.app/',
+      source: 'https://github.com/321Rishikesh/youtube-c'
     },
     {
       id: 2,
@@ -17,7 +18,8 @@ export default function Projects() {
       description: 'An innovative web application showcasing modern development practices and cutting-edge technologies. Features interactive components and responsive design for optimal user engagement.',
       technologies: ['React', 'Tailwind CSS', 'Modern JavaScript', 'Web Design'],
       image: '/image/srijan.png',
-      link: 'https://srijanlabs.vercel.app/'
+      link: 'https://srijanlabs.vercel.app/',
+      source: 'https://github.com/321Rishikesh/Srijan_Lab'
     }
   ];
 
@@ -114,6 +116,16 @@ export default function Projects() {
                   </motion.span>
                 ))}
               </div>
+              {project.source && (
+                <a
+                  className="project-source"
+                  href={project.source}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Source Code
+                </a>
+              )}
             </div>
           </motion.div>
         ))}
