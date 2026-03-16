@@ -26,6 +26,12 @@ export default function Certificates() {
       title: 'Automata',
       file: '/certificates/automata.pdf',
       tags: ['CS', 'Theory']
+    },
+    {
+      id: 'mooc-fb6sdz7-certificate',
+      title: 'MOOC Certificate',
+      file: '/certificates/mooc-fb6sdz7-certificate.pdf',
+      tags: ['MOOC']
     }
   ];
 
@@ -122,4 +128,3 @@ export default function Certificates() {
     </section>
   );
 }
-
