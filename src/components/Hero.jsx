@@ -58,7 +58,7 @@ export default function Hero() {
               Kumar <span className="highlight">Rishikesh</span>
             </h1>
 
-            <p className="hero-subtitle">Full Stack Web Developer</p>
+            <p className="hero-subtitle">Aspiring Full Stack Web Developer</p>
 
             <p className="hero-description">
               I build beautiful, responsive web applications with modern technologies
